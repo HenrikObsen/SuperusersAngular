@@ -11,7 +11,7 @@ declare var fetch : any;
 	</hello>
 */
 @Component({
-  selector: 'hello',
+  selector: 'app-main',
   templateUrl: './app.component.html',
   styleUrls: ['./app.style.css']
 
