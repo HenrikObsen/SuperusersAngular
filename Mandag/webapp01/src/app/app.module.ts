@@ -6,11 +6,11 @@ import { VragComponent } from './vrag/vrag.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VragComponent
   ],
   imports: [
-    BrowserModule,
-    VragComponent
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

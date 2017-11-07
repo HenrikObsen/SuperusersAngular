@@ -1,11 +1,16 @@
 {
   "name": "webapp01",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=1234",
+    "prestart": "npm install",
+    "start": "ng serve --port=1234  ",
+    "prestart_prod": "ng build --prod",
+    "start_prod": "live-server ./dist --port=1234  ",
     "build": "ng build",
+    "build:dev": "ng build --dev",
+    "build:prod": "ng build --prod ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,17 +27,14 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.2",
-    "gulp-sass": "^3.1.0",
     "rxjs": "^5.5.2",
-    "sass": "^1.0.0-beta.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.5.0",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
-    "typescript": "~2.4.2"
+    "typescript": "~2.4.2",
+    "live-server": ""
   }
 }

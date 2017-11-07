@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
 
+declare var fetch : any; 
+/*
+	@ decoration
+	<hello> 
+		import './app.component.html'
+		import './app.style.css'
+		import AppComponent.js
+
+	</hello>
+*/
 @Component({
-  selector: 'app-root',
+  selector: 'hello',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.style.css']
+
 })
 export class AppComponent {
-  title = 'app';
-
-  data = {
-    name: 'Henrik Obsen',
-    age: 38
-  }
-
-constructor(){
-  	this.hentData()
-  }
+title = 'Vrag appen';
   
-  hentData() {
-  	// filen database.json findes under mappen assets
-  	let databasen = "/assets/database.json"
-  	fetch(databasen)
-  			.then( res => res.json() )
-  			.then( products => this.data = products)
-  	
-  }
-}
+ }
+
+
