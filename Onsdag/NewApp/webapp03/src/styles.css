@@ -1,0 +1,25 @@
+
+
+@import url("https://unpkg.com/bootstrap/dist/css/bootstrap.min.css");
+
+
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 10px;
+}
+
+.pointable {
+  cursor: pointer;
+}
+
+button {
+  color: #555;
+}
+
+[hidden] {
+  display: none !important;
+}

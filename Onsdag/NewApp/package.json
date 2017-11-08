@@ -1,0 +1,16 @@
+{
+  "name": "kursus-angular-su072",
+  "version": "1.0.0",
+  "description": "* opsætning af udviklermiljø se \"programmer.md\"",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m '.' && git push origin master "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.itacademy.dk/kursus/kursus-angular-su072.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
